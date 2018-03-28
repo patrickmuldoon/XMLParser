@@ -1,5 +1,10 @@
 package com.patrick.xmlparser.domain;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Packaging {
 
 	private String transmissionFileName;
@@ -35,6 +40,7 @@ public class Packaging {
 		super();
 	}
 
+	
 	public String getTransmissionFileName() {
 		return transmissionFileName;
 	}
@@ -98,5 +104,15 @@ public class Packaging {
 	public void setRegionCode(String regionCode) {
 		this.regionCode = regionCode;
 	}
+
+	@Override
+	public String toString() {
+		return "Packaging [transmissionFileName=" + transmissionFileName + ", transmissionID=" + transmissionID
+				+ ", senderID=" + senderID + ", receiverID=" + receiverID + ", OriginatorID=" + OriginatorID
+				+ ", contractID=" + contractID + ", destinationID=" + destinationID + ", regionCode=" + regionCode
+				+ "]";
+	}
+	
+	
 	
 }

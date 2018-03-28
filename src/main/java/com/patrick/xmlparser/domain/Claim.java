@@ -1,9 +1,19 @@
 package com.patrick.xmlparser.domain;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;  
+import javax.xml.bind.annotation.XmlElement;  
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient; 
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name="echcf:claim")
 public class Claim {
 	
+	@XmlElement(name="echcf:packaging")
 	private Packaging packaging;
-	
+/*	
 	private ClaimSubmitterInfo claimSubmitterInfo;
 	
 	private ClaimReveiverInfo claimReceiverInfo;
@@ -35,16 +45,16 @@ public class Claim {
 	private String submitterClaimID;
 	
 	private BillingProvider billingProvider;
-
-	public Claim(Packaging packaging, ClaimSubmitterInfo claimSubmitterInfo, ClaimReveiverInfo claimReceiverInfo,
+*/
+	public Claim(Packaging packaging/*, ClaimSubmitterInfo claimSubmitterInfo, ClaimReveiverInfo claimReceiverInfo,
 			String internalClaimID, Classifications classifications, PatientInfo patientInfo,
 			SubscriberInfo subscriberInfo, ClaimIdentificationInfo claimIdentificationInfo, ClaimDetails claimDetails,
 			ClaimDates claimDates, ClaimAmounts claimAmounts, RelatedProvidersInfo relatedProvidersInfo,
 			ClaimCOBInfo claimCOBInfo, ClaimPaymentInfo claimPaymentInfo, ServiceLineInfo serviceLineInfo,
-			String submitterClaimID, BillingProvider billingProvider) {
+			String submitterClaimID, BillingProvider billingProvider*/) {
 		super();
 		this.packaging = packaging;
-		this.claimSubmitterInfo = claimSubmitterInfo;
+/*		this.claimSubmitterInfo = claimSubmitterInfo;
 		this.claimReceiverInfo = claimReceiverInfo;
 		this.internalClaimID = internalClaimID;
 		this.classifications = classifications;
@@ -60,7 +70,7 @@ public class Claim {
 		this.serviceLineInfo = serviceLineInfo;
 		this.submitterClaimID = submitterClaimID;
 		this.billingProvider = billingProvider;
-	}
+*/	}
 
 	public Claim() {
 		super();
@@ -74,6 +84,7 @@ public class Claim {
 		this.packaging = packaging;
 	}
 
+/*	@XmlElement(name="echcf:ClaimSubmitterInfo")
 	public ClaimSubmitterInfo getClaimSubmitterInfo() {
 		return claimSubmitterInfo;
 	}
@@ -82,6 +93,7 @@ public class Claim {
 		this.claimSubmitterInfo = claimSubmitterInfo;
 	}
 
+	@XmlElement(name="echcf:ClaimReceiverInfo")
 	public ClaimReveiverInfo getClaimReceiverInfo() {
 		return claimReceiverInfo;
 	}
@@ -90,6 +102,7 @@ public class Claim {
 		this.claimReceiverInfo = claimReceiverInfo;
 	}
 
+	@XmlElement(name="echcf:InternalClaimID")
 	public String getInternalClaimID() {
 		return internalClaimID;
 	}
@@ -98,6 +111,7 @@ public class Claim {
 		this.internalClaimID = internalClaimID;
 	}
 
+	@XmlElement(name="echcf:Classifications")
 	public Classifications getClassifications() {
 		return classifications;
 	}
@@ -106,6 +120,7 @@ public class Claim {
 		this.classifications = classifications;
 	}
 
+	@XmlElement(name="echcf:PatientInfo")
 	public PatientInfo getPatientInfo() {
 		return patientInfo;
 	}
@@ -114,6 +129,7 @@ public class Claim {
 		this.patientInfo = patientInfo;
 	}
 
+	@XmlElement(name="echcf:SubscriberInfo")
 	public SubscriberInfo getSubscriberInfo() {
 		return subscriberInfo;
 	}
@@ -122,6 +138,7 @@ public class Claim {
 		this.subscriberInfo = subscriberInfo;
 	}
 
+	@XmlElement(name="echcf:ClaimIdentificationInfo")
 	public ClaimIdentificationInfo getClaimIdentificationInfo() {
 		return claimIdentificationInfo;
 	}
@@ -130,6 +147,7 @@ public class Claim {
 		this.claimIdentificationInfo = claimIdentificationInfo;
 	}
 
+	@XmlElement(name="echcf:ClaimDetails")
 	public ClaimDetails getClaimDetails() {
 		return claimDetails;
 	}
@@ -138,6 +156,7 @@ public class Claim {
 		this.claimDetails = claimDetails;
 	}
 
+	@XmlElement(name="echcf:ClaimDates")
 	public ClaimDates getClaimDates() {
 		return claimDates;
 	}
@@ -146,6 +165,7 @@ public class Claim {
 		this.claimDates = claimDates;
 	}
 
+	@XmlElement(name="echcf:ClaimAmounts")
 	public ClaimAmounts getClaimAmounts() {
 		return claimAmounts;
 	}
@@ -154,6 +174,7 @@ public class Claim {
 		this.claimAmounts = claimAmounts;
 	}
 
+	@XmlElement(name="echcf:RelatedProvidersInfo")
 	public RelatedProvidersInfo getRelatedProvidersInfo() {
 		return relatedProvidersInfo;
 	}
@@ -162,6 +183,7 @@ public class Claim {
 		this.relatedProvidersInfo = relatedProvidersInfo;
 	}
 
+	@XmlElement(name="echcf:ClaimCOBInfo")
 	public ClaimCOBInfo getClaimCOBInfo() {
 		return claimCOBInfo;
 	}
@@ -170,6 +192,7 @@ public class Claim {
 		this.claimCOBInfo = claimCOBInfo;
 	}
 
+	@XmlElement(name="echcf:ClaimPaymentInfo")
 	public ClaimPaymentInfo getClaimPaymentInfo() {
 		return claimPaymentInfo;
 	}
@@ -178,6 +201,7 @@ public class Claim {
 		this.claimPaymentInfo = claimPaymentInfo;
 	}
 
+	@XmlElement(name="echcf:ServiceLineInfo")
 	public ServiceLineInfo getServiceLineInfo() {
 		return serviceLineInfo;
 	}
@@ -186,6 +210,7 @@ public class Claim {
 		this.serviceLineInfo = serviceLineInfo;
 	}
 
+	@XmlElement(name="echcf:SubmitterClaimID")
 	public String getSubmitterClaimID() {
 		return submitterClaimID;
 	}
@@ -194,6 +219,7 @@ public class Claim {
 		this.submitterClaimID = submitterClaimID;
 	}
 
+	@XmlElement(name="echcf:BillingProvider")
 	public BillingProvider getBillingProvider() {
 		return billingProvider;
 	}
@@ -201,5 +227,5 @@ public class Claim {
 	public void setBillingProvider(BillingProvider billingProvider) {
 		this.billingProvider = billingProvider;
 	}
-	
+*/	
 }
