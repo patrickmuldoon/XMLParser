@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<claim>
+	<claimSubmitterInfo></claimSubmitterInfo>
+
+	<claimReceiverInfo></claimReceiverInfo>
+
+	<internalClaimID></internalClaimID>
+
+	<classifications></classifications>
+
+	<patientInfo></patientInfo>
+
+	<subscriberInfo></subscriberInfo>
+
+	<claimIdentificationInfo></claimIdentificationInfo>
+
+	<claimDetails></claimDetails>
+
+	<claimDates></claimDates>
+
+	<claimAmounts></claimAmounts>
+
+	<relatedProvidersInfo></relatedProvidersInfo>
+
+	<claimCOBInfo></claimCOBInfo>
+
+	<claimPaymentInfo></claimPaymentInfo>
+
+	<serviceLineInfo></serviceLineInfo>
+
+	<submitterClaimID></submitterClaimID>
+
+	<billingProvider></billingProvider>
+</claim>
