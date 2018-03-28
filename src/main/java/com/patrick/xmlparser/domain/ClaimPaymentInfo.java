@@ -17,4 +17,6 @@ public class ClaimPaymentInfo {
 	private String patientResponsibilityAmount;
 	
 	private String otherAmount;
+	
+	
 }

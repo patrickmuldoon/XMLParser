@@ -3,6 +3,7 @@ package com.patrick.xmlparser.domain.claimdetails;
 import java.util.List;
 
 import com.patrick.xmlparser.domain.claimdetails.healthinformation.AdmittingDiagnosis;
+import com.patrick.xmlparser.domain.claimdetails.healthinformation.Condition;
 import com.patrick.xmlparser.domain.claimdetails.healthinformation.ExternalCauseOfInjury;
 import com.patrick.xmlparser.domain.claimdetails.healthinformation.OccurenceSpan;
 import com.patrick.xmlparser.domain.claimdetails.healthinformation.OtherDiagnosis;
@@ -33,6 +34,8 @@ public class HealthInformation {
 	private List<OccurenceSpan> occurenceSpan;
 	
 	private List<Value> value;
+	
+	private List<Condition> condition;
 	
 	
 }
