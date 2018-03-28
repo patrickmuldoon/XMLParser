@@ -10,5 +10,5 @@ public class Classifications {
 	
 	private boolean isChartReviewInitiatedAdjustment;
 	
-	
+	private String isCapitated;
 }

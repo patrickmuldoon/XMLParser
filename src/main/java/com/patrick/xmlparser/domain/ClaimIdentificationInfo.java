@@ -4,5 +4,5 @@ public class ClaimIdentificationInfo {
 
 	private String claimType;
 	
-	
+	private String clearingHouseTraceNumber;
 }
