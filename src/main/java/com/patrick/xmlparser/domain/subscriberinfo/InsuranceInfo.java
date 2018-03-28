@@ -16,4 +16,8 @@ public class InsuranceInfo {
 	private String benefitsAssignmentIndicator;
 	
 	private String releaseOfInformation;
+	
+	private String planPayerSequenceCode;
+	
+	private String planFilingIndicatorCode;
 }

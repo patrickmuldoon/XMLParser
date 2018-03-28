@@ -10,6 +10,7 @@ public class ClaimDates {
 	
 	private String admissionHour;
 	
+	private String claimProcessorReceivedDate;
 	
 	private class ServiceDates{
 		
