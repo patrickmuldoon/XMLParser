@@ -17,11 +17,16 @@ public class PayerInfo {
 	
 	private String taxID;
 	
+	private String planName;
+	
 	private class PrimaryIdentifier{
 		
 		private String qualifier;
 		
 		private String identifier;
+		
+		private String planIdentifier;
+		
 		
 	}
 	

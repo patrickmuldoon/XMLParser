@@ -10,5 +10,11 @@ public class ClaimPaymentInfo {
 	
 	private String claimFrequencyCode;
 	
+	private String claimStatusCode;
 	
+	private String totalClaimPaidAmount;
+	
+	private String patientResponsibilityAmount;
+	
+	private String otherAmount;
 }
