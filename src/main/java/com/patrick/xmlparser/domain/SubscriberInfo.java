@@ -1,5 +1,7 @@
 package com.patrick.xmlparser.domain;
 
+import com.patrick.xmlparser.domain.subscriberinfo.AddressInfo;
+import com.patrick.xmlparser.domain.subscriberinfo.DemographicsInfo;
 import com.patrick.xmlparser.domain.subscriberinfo.EnrollmentInfo;
 import com.patrick.xmlparser.domain.subscriberinfo.InsuranceInfo;
 
@@ -20,6 +22,12 @@ public class SubscriberInfo {
 	private String middleName;
 	
 	private PrimaryIdentifier primaryIdentifier;
+	
+	private AddressInfo addressInfo;
+	
+	private DemographicsInfo demographicsInfo;
+	
+	private String healthInsuranceClaimIdentifier;
 	
 	
 	private class PrimaryIdentifier{

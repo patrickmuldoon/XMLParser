@@ -14,6 +14,8 @@ public class BillingProvider {
 	
 	private String taxID;
 	
+	private String payerProviderNumber;
+	
 	
 	private class PrimaryIdentifier{
 		

@@ -33,13 +33,15 @@ public class Claim {
 	private ServiceLineInfo serviceLineInfo;
 	
 	private String submitterClaimID;
+	
+	private BillingProvider billingProvider;
 
 	public Claim(Packaging packaging, ClaimSubmitterInfo claimSubmitterInfo, ClaimReveiverInfo claimReceiverInfo,
 			String internalClaimID, Classifications classifications, PatientInfo patientInfo,
 			SubscriberInfo subscriberInfo, ClaimIdentificationInfo claimIdentificationInfo, ClaimDetails claimDetails,
 			ClaimDates claimDates, ClaimAmounts claimAmounts, RelatedProvidersInfo relatedProvidersInfo,
 			ClaimCOBInfo claimCOBInfo, ClaimPaymentInfo claimPaymentInfo, ServiceLineInfo serviceLineInfo,
-			String submitterClaimID) {
+			String submitterClaimID, BillingProvider billingProvider) {
 		super();
 		this.packaging = packaging;
 		this.claimSubmitterInfo = claimSubmitterInfo;
@@ -57,6 +59,7 @@ public class Claim {
 		this.claimPaymentInfo = claimPaymentInfo;
 		this.serviceLineInfo = serviceLineInfo;
 		this.submitterClaimID = submitterClaimID;
+		this.billingProvider = billingProvider;
 	}
 
 	public Claim() {
@@ -189,6 +192,14 @@ public class Claim {
 
 	public void setSubmitterClaimID(String submitterClaimID) {
 		this.submitterClaimID = submitterClaimID;
+	}
+
+	public BillingProvider getBillingProvider() {
+		return billingProvider;
+	}
+
+	public void setBillingProvider(BillingProvider billingProvider) {
+		this.billingProvider = billingProvider;
 	}
 	
 }

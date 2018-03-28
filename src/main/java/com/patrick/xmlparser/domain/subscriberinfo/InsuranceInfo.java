@@ -1,5 +1,7 @@
 package com.patrick.xmlparser.domain.subscriberinfo;
 
+import com.patrick.xmlparser.domain.subscriberinfo.insuranceinfo.PayerInfo;
+
 public class InsuranceInfo {
 
 	
@@ -7,5 +9,11 @@ public class InsuranceInfo {
 	
 	private String filingIndicatorCode;
 	
+	private PayerInfo payerInfo;
 	
+	private String assignmentPlanParticipationCode;
+	
+	private String benefitsAssignmentIndicator;
+	
+	private String releaseOfInformation;
 }
